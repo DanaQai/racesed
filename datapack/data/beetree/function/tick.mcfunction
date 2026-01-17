@@ -1,3 +1,5 @@
+# Если раса не выбрана (score race = 0) — блокируем игрока
+execute as @a[scores={race=0}] run function beetree:selection/restrict
 
 # BeeTree Races System - Main Tick Loop
 execute as @a unless score @s race matches 1..5 run function beetree:selection/prompt
